@@ -1,4 +1,6 @@
 # Frontend Mentor - Loopstudios landing page
+## Live Demo Here
+Link: https://gresiandra.github.io/practice_project/
 
 # Home
 ![loopstudios_header](https://user-images.githubusercontent.com/25950637/119228093-ee4a9400-bb43-11eb-82c1-de9b8dcaeea2.png)
