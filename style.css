@@ -74,6 +74,7 @@ header nav .burger-menu span {
     width: 25px;
     margin: 3px 0;
     border: 1px solid whitesmoke;
+    background-color: whitesmoke;
 }
 
 .overlay {
@@ -360,9 +361,4 @@ footer .bottom2 ul li:first-child {
     .creation .contents .card h1 {
         padding: 20px 20px;
     }
-
-    .deep-earth {
-        content:url("images/mobile/image-deep-earth.jpg");
-    }
-
 }
