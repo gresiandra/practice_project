@@ -1,0 +1,368 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Alata', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+header {
+    background: url('images/desktop/image-hero.jpg') left top no-repeat;;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: auto;
+    padding: 3em 4em;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+header nav ul {
+    display: flex;
+    list-style: none;
+    line-height: 3em;
+}
+
+header nav ul li a {
+    margin: 0 1em;
+    color: whitesmoke;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+header nav ul li a:hover {
+    text-shadow: 0 0 5px rgba(255,255,255,1);
+}
+
+header nav ul li a:active {
+    text-shadow: 0 0 5px rgba(255,255,255,1);
+}
+
+.logo {
+    font-size: 32px;
+    color: whitesmoke;
+}
+
+header h1 {
+    min-width: 300px;
+    max-width: 500px;
+    text-transform: uppercase;
+    border: 1px solid whitesmoke;
+    margin: 100px 0;
+    padding: 20px;
+    font-size: 3em;
+    color: whitesmoke;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+header nav .burger-menu {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 45px;
+    height: 50px;
+}
+
+header nav .burger-menu span {
+    width: 25px;
+    margin: 3px 0;
+    border: 1px solid whitesmoke;
+}
+
+.overlay {
+    display: none;
+}
+
+.overlay .logo {
+    margin-bottom: 100px;
+}
+
+.overlay ul li {
+    margin: 20px 0;
+}
+
+.overlay ul li a {
+    color: whitesmoke;
+    cursor: pointer;
+    text-decoration: none;
+    font-family: 'Josefin Sans', sans-serif;
+    text-transform: uppercase;
+    font-size: 1.5em;
+}
+
+.overlay.active {
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    z-index: 10;
+    background-color: hsl(0, 0%, 0%);
+    transition: 0.3s;
+}
+
+.about {
+    width: 100vw;
+    height: 70vh;
+    margin: 50px auto;
+    padding: 3em 4em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.about .container {
+    width: 800px;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.about .container .image {
+    background: url("images/desktop/image-interactive.jpg") center no-repeat;
+    height: 400px;
+    width: 100%;
+    margin: 0 20px;
+}
+
+.about .container .text {
+    width: 400px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding: 50px 50px 0;
+    background: white;
+}
+
+.about .container .text h1 {
+    font-size: 2em;
+    text-transform: uppercase;
+    font-family: 'Josefin Sans', sans-serif;
+    margin-bottom: 30px;
+}
+
+.about .container .text p {
+    font-size: 0.8em;
+    color: hsl(0, 0%, 41%);
+}
+
+.creation {
+    padding: 3em 4em;
+}
+
+.creation .menu {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.creation .menu h1 {
+    text-transform: uppercase;
+    font-size: 2em;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.creation .menu button {
+    width: 130px;
+    height: 35px;
+    background-color: black;
+    border: none;
+    color: whitesmoke;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    cursor: pointer;
+}
+
+.creation .contents {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.creation .contents .card {
+    position: relative;
+}
+
+.creation .contents .card img {
+    width: 100%;
+    height: auto;
+    filter: brightness(70%);
+}
+
+.creation .contents .card h1 {
+    width: 70%;
+    position: absolute;
+    bottom: 0;
+    color: whitesmoke;
+    padding: 30px 40px;
+    text-transform: uppercase;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+footer {
+    padding: 2em 4em;
+    background-color: black;
+}
+
+footer .bottom1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+footer .bottom1 p {
+    font-size: 1.5em;
+    color: whitesmoke;
+}
+
+footer .bottom1 ul {
+    display: flex;
+    list-style: none;
+}
+
+footer .bottom1 ul li {
+    margin: 0 10px;
+}
+
+footer .bottom2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer .bottom2 p {
+    font-size: 0.8em;
+    color: whitesmoke;
+}
+
+footer .bottom2 ul {
+    display: flex;
+    list-style: none;
+}
+
+footer .bottom2 ul li {
+    margin: 0 10px;
+    cursor: pointer;
+    color: whitesmoke;
+}
+
+footer .bottom2 ul li:first-child {
+    margin: 0;
+}
+
+@media screen and (max-width: 750px) {
+
+    header {
+        padding: 3em 1.5em;
+    }
+
+    header h1 {
+        font-size: 2.5em;
+    }
+
+    header nav ul {
+        display: none;
+    }
+
+    header nav .burger-menu {
+        display: flex;
+        cursor: pointer;
+        z-index: 11;
+    }
+
+    .about {
+        height: auto;
+    }
+
+    .about .container {
+        flex-direction: column;
+    }
+
+    .about .container .image {
+        height: 300px;
+        background-size: cover;
+    }
+
+    .about .container .text {
+        position: static;
+        width: 100%;
+        text-align: center;
+        padding: 50px 10px 0;
+    }
+
+    .about .container .text h1 {
+        font-size: 1.7em;
+    }
+
+    .creation {
+        padding: 3em 2em;
+    }
+
+    .creation .menu button {
+        display: none;
+    }
+
+    .creation .menu {
+        justify-content: center;
+        align-items: center;
+    }
+
+    footer .bottom1 {
+        flex-direction: column;
+    }
+
+    footer .bottom1 p {
+        margin: 20px 0;
+    }
+
+    footer .bottom2 {
+        flex-direction: column;
+    }
+
+    footer .bottom2 p {
+        width: 300px;
+        text-align: center;
+        margin: 20px 0;
+    }
+
+    footer .bottom2 ul li {
+        margin: 0 5px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+
+    .creation .contents {
+        display: flex;
+        flex-direction: column; 
+        height: auto;       
+    }
+
+    .creation .contents .card {
+        height: 200px;
+        overflow: hidden;
+    }
+
+    .creation .contents .card h1 {
+        padding: 20px 20px;
+    }
+
+    .deep-earth {
+        content:url("images/mobile/image-deep-earth.jpg");
+    }
+
+}
